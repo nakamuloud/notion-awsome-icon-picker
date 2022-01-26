@@ -1,0 +1,21 @@
+{
+    "name": "notion-awsome-icon-picker",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Icon picker for Notion",
+    "background": {
+        "scripts": [
+            "hot-reload.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.notion.so/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
